@@ -1,0 +1,16 @@
+.first-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.grid-box{
+    display: grid;
+    grid-template-rows:1fr 2fr  ;
+    gap: 20px;
+
+}
