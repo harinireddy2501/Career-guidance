@@ -94,6 +94,7 @@ p {
   display: grid;
   float: right;
   margin-bottom: 20px;
+  margin-right: 20px;
   grid-template-rows: minmax(200px,450px);
   grid-template-columns: minmax(200px,500px);
 }
