@@ -1,0 +1,99 @@
+h1 {
+  display: block;
+  font-weight: bold;
+  font-size: 4.5em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
+
+
+button {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+p {
+  display: block;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.navigation_bar {
+  height: fit-content;
+  width: 100%;
+  background-color: #67c6e3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.home {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.login {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  height: fit-content;
+  width: fit-content;
+  font-size: 1.7rem;
+  background-color: #67c6e3;
+  color: white;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+
+.first-flex {
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.first-image {
+  box-shadow: 3px 3px grey;
+  border-radius: 20px;
+  margin-left: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.second-flex {
+  margin: 20px;
+  margin-bottom: 40px
+}
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+@font-face {
+  font-family: "Formula Condensed Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Formula Condensed Light"),
+    url("fonts/FormulaCondensed-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Formula Condensed Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Formula Condensed Bold"),
+    url("fonts/FormulaCondensed-Bold.woff") format("woff");
+}
+
+
+.image-div{
+  display: grid;
+  float: right;
+  margin-bottom: 20px;
+  grid-template-rows: minmax(200px,450px);
+  grid-template-columns: minmax(200px,500px);
+}
