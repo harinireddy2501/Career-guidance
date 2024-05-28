@@ -1,0 +1,140 @@
+.main-body {
+  margin: 20px;
+}
+
+
+
+.title-grid {
+  gap: 20px;
+  display: grid;
+  height: auto;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid grey;
+}
+
+.title-grid > h1 {
+  color: navy;
+  font-weight: bold;
+  font-size: 2.4em;
+  font-family: Tinos, serif;
+}
+
+.title-grid > h1 > span > p {
+  padding-top: 25px;
+  color: #e69319;
+  font-family: Merienda, cursive;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.title-grid > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-bottom: 10px;
+}
+
+.Career-grid {
+  margin-top: 10px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 1fr;
+}
+.Career-grid > div > h1 {
+  font-family: "Formula Condensed Light";
+  font-size: 2em;
+  height: 30px;
+}
+.Career-Options {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.career-image-grid {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1.5fr 0.3fr;
+}
+.flex-grid > div{
+  transition: 0.5s;
+}
+
+.imagetitle{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  position: absolute;
+  background: rgba(0, 0, 0,0.6) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.6s;
+}
+
+.title-container:hover{
+  opacity: 1;
+}
+
+.title-container h1{
+  font-size: 55px;
+  color: #e69319;
+  margin-bottom: 15px;
+}
+
+.flex-grid > div> div > a >   img {
+  border: 1px solid black;
+  box-shadow: 2px 2px gray;
+  width: 100%;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.flex-grid > div:hover{
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+
+.flex-grid > div > a > h3 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 1.7em;
+}
+
+@media (min-width: 1023px) {
+  .title-grid > h1 {
+    font-size: 3.4em;
+  }
+
+  .title-grid > img {
+    height: 250px;
+    width: 300px;
+  }
+  .flex-grid > div > div >a > img {
+    box-shadow: 2px 2px gray;
+    width: 100%;
+    height: 250px;
+    border-radius: 5%;
+  }
+  .flex-grid > div > a > h3 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+
+@font-face {
+  font-family: "Formula Condensed Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Formula Condensed Light"),
+    url("fonts/FormulaCondensed-Light.woff") format("woff");
+}
